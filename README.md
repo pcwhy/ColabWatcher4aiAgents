@@ -6,7 +6,7 @@ This folder is intended to travel well in GitHub: it contains the skill instruct
 
 ## What It Does
 
-- Watches a Google Drive folder from a live Google Colab session
+- Watches a Google Drive folder from a live Google Colab session, the session should running "colab_agent.ipynb". **Please remember to uncomment the last line in the last code cell**
 - Accepts single-file `.py` jobs
 - Accepts single-file `.ipynb` jobs
 - Accepts bundled job folders with `job.json` and an `entrypoint`
@@ -85,10 +85,11 @@ The `entrypoint` may also point to a notebook, for example:
 
 ## How To Run
 
-1. Open [../colab_agent.ipynb](../colab_agent.ipynb) in Google Colab.
-2. Run the setup cells to mount Google Drive and initialize folders.
-3. Start the watcher with `watch_forever()`.
-4. Submit jobs into `jobs/inbox/`.
+1. Open [../colab_agent.ipynb](../colab_agent.ipynb) in Google Colab. **Make sure you enabled GPU Runtime**
+2. Run the setup cells to mount Google Drive, **check the code so that you know which folder in your Google Drive you are mounting**, the code will initialize folders.
+3. Mirror the **../Colab Agent** folder to your local PC.
+4. Make sure the `watch_forever()` function is running with heartbeats generated.
+5. Submit jobs into `jobs/inbox/`.
 
 ## Outputs
 
