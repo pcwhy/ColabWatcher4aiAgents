@@ -1,4 +1,4 @@
-# Colab Drive Agent
+# Colab Drive Agent for Local AI agents to leverage Google Colab computational power.
 
 `colab-drive-agent` is a local skill plus Colab workflow for running Python scripts and Jupyter notebooks from a Google Drive-backed job queue.
 
