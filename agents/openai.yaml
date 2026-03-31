@@ -1,0 +1,4 @@
+interface:
+  display_name: "Colab Drive Agent"
+  short_description: "Build Colab Drive job runners"
+  default_prompt: "Use $colab-drive-agent to create or update a Colab notebook that watches Google Drive for Python jobs."
