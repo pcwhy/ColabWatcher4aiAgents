@@ -87,9 +87,9 @@ The `entrypoint` may also point to a notebook, for example:
 
 1. Open [../colab_agent.ipynb](../colab_agent.ipynb) in Google Colab. **Make sure you enabled GPU Runtime**
 2. Run the setup cells to mount Google Drive, **check the code so that you know which folder in your Google Drive you are mounting**, the code will initialize folders.
-3. Mirror the **../Colab Agent** folder to your local PC.
+3. Mirror the **../Colab Agent** folder to your local PC. Let AI know where it is in the local computer and let AI read this file or the Skill.md.
 4. Make sure the `watch_forever()` function is running with heartbeats generated.
-5. Submit jobs into `jobs/inbox/`.
+5. Submit jobs into `jobs/inbox/` of the **Colab Agent/** folder in your Google Drive.
 
 ## Outputs
 
