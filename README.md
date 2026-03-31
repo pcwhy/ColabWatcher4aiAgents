@@ -142,3 +142,4 @@ This folder is best treated as:
 - a reusable skill for future Codex sessions
 - a GitHub-shareable operator guide
 - a local companion to the Colab notebook that actually runs the Drive watcher
+- 'ThreeLayerNN_Pass.ipynb' is test notebook including a three-layer neural network training notebook used in DS615 Data Modeling course at Embry-Riddle Aeronautical University.
