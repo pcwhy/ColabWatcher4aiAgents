@@ -9,14 +9,14 @@ Use this skill to help the user run the Colab Agent notebook and manage its Driv
 
 ## Source Of Truth
 
-- Notebook: [colab_agent.ipynb](/Users/yongxinliu/Career/CareerAtERAU/KG Transportation System Sequential/Colab Agent/colab_agent.ipynb)
-- Skill file: [SKILL.md](/Users/yongxinliu/Career/CareerAtERAU/KG Transportation System Sequential/Colab Agent/colab-drive-agent/SKILL.md)
+- Notebook: [colab_agent.ipynb]
+- Skill file: [SKILL.md]
 
 Treat the notebook as the source of truth for actual runtime behavior.
 
 ## Required Drive Layout
 
-The agent expects this exact structure under `MyDrive/Colab Agent`:
+The agent expects and the user is responsible for this exact structure under `MyDrive/Colab Agent`:
 
 ```text
 Colab Agent/
@@ -43,11 +43,12 @@ Tell the user to follow these rules:
 
 When the user asks how to start the agent, tell them to:
 
-1. Open [colab_agent.ipynb](/Users/yongxinliu/Career/CareerAtERAU/KG Transportation System Sequential/Colab Agent/colab_agent.ipynb) in Google Colab.
-2. Run the setup cells to mount Drive and create any missing folders.
+1. Open [colab_agent.ipynb] in Google Colab.
+2. Run the setup cells to mount Drive and initialize any missing folders.
 3. Confirm the notebook is pointing at `MyDrive/Colab Agent`.
 4. Start the watcher with `watch_forever()`.
-5. Leave the Colab runtime connected if continuous job execution is needed.
+5. Mirror the Colab Agent/ folder in user's Google Drive to the local, let AI know where it is in the local computer.
+6. Leave the Colab runtime connected if continuous job execution is needed.
 
 Warn them that if the runtime disconnects, the watcher stops and the notebook cells must be run again.
 
